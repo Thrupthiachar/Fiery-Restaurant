@@ -1,0 +1,19 @@
+<body>
+  
+
+<div class="container">
+  <h2 style="text-align: center;">Food Menu</h2>
+  <br>
+  <div class="row">
+    <div class="col-md-4 mb-4" *ngFor="let foodItem of foodItems">
+      <div class="card">
+        <img [src]="foodItem.imageUrl" class="card-img-top" alt="{{ foodItem.name }}">
+        <div class="card-body">
+          <h5 class="card-title">{{ foodItem.name }}</h5>
+          <p class="card-text">Price: {{ foodItem.price | currency:'INR' }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>

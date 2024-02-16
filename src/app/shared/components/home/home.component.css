@@ -1,0 +1,58 @@
+/* 
+.container {
+    margin-top: 20px;
+  }
+  
+  h2 {
+    color: #333;
+  }
+  
+  p {
+    color: #666;
+  } */
+
+/* .container-fluid{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('/assets/images/p1.jpg');
+  background-size: cover;
+  background-position: center;
+}
+h1,p{
+  text-align: center;
+} */
+
+
+/* .footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #343a40;
+  text-align: center;
+  padding: 10px 0;
+  color: white;
+} */
+
+/* styles.css or your component-specific CSS file */
+main {
+  min-height: calc(100vh - 3.5rem); 
+  background-image: url('https://cinnamonisleworth.co.uk/wp-content/uploads/2020/06/s.jpg'); 
+  background-size: cover;
+  background-position: center;
+}
+
+.main-content {
+  text-align: center;
+  padding: 3rem 0;
+  color: black;
+}
+
+.footer {
+  background-color: rgba(0, 0, 0, 0.8); /* Adjust opacity if needed */
+  color: white;
+}
+
+
+  

@@ -1,0 +1,25 @@
+<div class="container mt-4">
+    <h2>Payments</h2>
+  
+    <!-- Form for making a payment -->
+    <!-- <form (submit)="makePayment()">
+      <div class="form-group">
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" name="amount" [(ngModel)]="paymentAmount" class="form-control" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Make Payment</button>
+    </form> -->
+  
+    <!-- Display payment history -->
+    <div *ngIf="payments.length > 0">
+      <h3>Payment History</h3>
+      <ul>
+        <li *ngFor="let payment of payments">
+          <span>Payment ID: {{ payment.id }}, Amount: {{ payment.amount }}</span>
+          <!-- Add more payment details as needed -->
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  

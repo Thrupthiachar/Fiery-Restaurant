@@ -1,0 +1,35 @@
+
+  .nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin-right: 20px; 
+  }
+  
+  .nav-links li:last-child {
+    margin-right: 0; 
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: #333; 
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links li a:hover {
+    color: #ff4500; 
+  }
+
+  h1,p{
+    text-align: center;
+  }
+
+  
+  
+  

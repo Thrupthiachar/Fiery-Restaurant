@@ -1,0 +1,16 @@
+.container {
+    margin-top: 20px;
+  }
+  
+  h2 {
+    color: #333;
+  }
+  
+  p {
+    color: #666;
+  }
+  .footer {
+    background-color: rgba(0, 0, 0, 0.8); /* Adjust opacity if needed */
+    color: white;
+  }
+  

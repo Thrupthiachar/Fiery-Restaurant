@@ -1,0 +1,32 @@
+
+<div class="container mt-4">
+  <h2>Place Order</h2>
+  <form (ngSubmit)="submitOrder()">
+    <div class="form-group">
+      <label for="itemName">Order No:</label>
+      <input type="text" class="form-control" id="itemName" [(ngModel)]="orderNo">
+    </div>
+    <div class="form-group">
+      <label for="itemName">Id:</label>
+      <input type="text" class="form-control" id="itemName" [(ngModel)]="orderid">
+    </div>
+    <div class="form-group">
+      <label for="quantity">Contact Name:</label>
+      <input type="string" class="form-control" id="quantity" [(ngModel)]="contactName">
+    </div>
+    <div class="form-group">
+      <label for="itemName">Id:</label>
+      <input type="text" class="form-control" id="itemName" [(ngModel)]="orderid">
+    </div>
+    <button type="submit" class="btn btn-dark">Place Order</button>
+  </form>
+</div>
+
+
+
+  <footer class="footer mt-auto py-3 bg-dark text-white">
+    <div class="container text-center">
+      <span>&copy; 2024 Fiery Restaurant</span>
+    </div>
+  </footer>
+  

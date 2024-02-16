@@ -1,0 +1,30 @@
+<div class="container mt-4">
+  <h2 class="text-center mb-4">Order Details</h2>
+  <div class="card border-dark">
+    <div class="card-header bg-dark text-white">
+      Order No: {{ order.orderNo }}
+    </div>
+    <div class="card-body">
+      <p><strong>Contact Name:</strong> {{ order.contactName }}</p>
+      <p><strong>Order Date:</strong> {{ order.orderDate }}</p>
+      <p><strong>Items Ordered:</strong> {{ order.items.length }}</p>
+      <p><strong>Order Total:</strong> {{ order.orderTotal }}</p>
+      <p><strong>Tax Total:</strong> {{ order.taxTotal }}</p>
+      <p><strong>Grand Total:</strong> {{ order.grandTotal }}</p>
+      <h4>Items:</h4>
+      <ul>
+        <li *ngFor="let item of order.items">
+          {{ item.name }} - Quantity: {{ item.quantity }} - Price: {{ item.price }} - Item Value: {{ item.itemValue }}
+        </li>
+      </ul>
+      <button class="btn btn-secondary" (click)="goBack()">Back to Orders</button>
+    </div>
+  </div>
+</div>
+
+  <footer class="footer mt-auto py-3 bg-dark text-white">
+    <div class="container text-center">
+      <span>&copy; 2024 Fiery Restaurant</span>
+    </div>
+  </footer>
+  

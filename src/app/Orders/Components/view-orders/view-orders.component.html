@@ -1,0 +1,37 @@
+
+<div class="container mt-4">
+  <h2 class="text-center mb-4">View Orders</h2>
+  <div class="row">
+    <!-- Angular *ngFor directive to loop through orders -->
+    <div class="col-md-4 mb-4" *ngFor="let order of orders">
+      <div class="card border-dark">
+        <div class="card-header bg-dark text-white">
+          Order No: {{ order.orderNo }}
+        </div>
+        <div class="card-body">
+          <p><strong>ID:</strong> {{ order.id }}</p>
+          <p><strong>Contact Name:</strong> {{ order.contactName }}</p>
+          <p><strong>Items Ordered:</strong> {{ order.items.length }}</p>
+          <!-- <p><strong>Order Date:</strong> {{ order.orderDate }}</p>
+          <p><strong>Items Ordered:</strong> {{ order.items.length }}</p>
+          <p><strong>Order Total:</strong> {{ order.orderTotal }}</p> -->
+          <!-- <p><strong>Tax Total:</strong> {{ order.taxTotal }}</p>
+          <p><strong>Grand Total:</strong> {{ order.grandTotal }}</p> -->
+          <!-- <ul class="list-unstyled">
+            <li *ngFor="let item of order.items">{{ item.name }} (Quantity: {{ item.quantity }})</li>
+          </ul> -->
+          <!-- <button (click)="deleteOrder(order.id)">Delete</button> -->
+          <button class="btn btn-secondary" (click)="viewOrderDetails(order.id)">View Details</button>
+
+ <!-- <a routerLink="/view-orders">Back to Orders</a> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="footer mt-auto py-3 bg-dark text-white">
+  <div class="container text-center">
+    <span class="text">&copy; 2024 Fiery Restaurant</span>
+  </div>
+</footer>

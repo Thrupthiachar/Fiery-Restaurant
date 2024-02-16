@@ -1,0 +1,28 @@
+.container {
+    margin-top: 20px;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  ul li {
+    margin-bottom: 5px;
+  }
+  
+  a {
+    color: #007bff;
+  }
+  
+  a:hover {
+    color: #0056b3;
+  }
+  .footer {
+    background-color: rgba(0, 0, 0, 0.8); /* Adjust opacity if needed */
+    color: white;
+    bottom: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+  }

@@ -1,0 +1,43 @@
+
+.container {
+  padding-top: 20px;
+}
+
+h2 {
+  color: #333; 
+}
+
+.card {
+  border-radius: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.card-header {
+  background-color:black;
+}
+
+.card-header h5 {
+  color: #fff; 
+}
+
+.card-body p {
+  margin-bottom: 10px;
+}
+
+.card-body ul {
+  padding-left: 0;
+}
+
+.card-body li {
+  list-style: none;
+}
+
+
+.footer {
+  background-color: #343a40; 
+  color: white; 
+}
+
+.footer span {
+  font-size: 14px;
+}

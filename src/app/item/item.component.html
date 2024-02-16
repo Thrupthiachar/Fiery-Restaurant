@@ -1,0 +1,45 @@
+<!-- <div class="row">
+    <div class="col-md-4 mb-4" *ngFor="let item of items">
+      <div class="card"> -->
+        <!-- <img src="{{ item.imageUrl }}" class="card-img-top" alt="{{ item.name }}"> -->
+        <!-- <div class="card-body">
+          <h5 class="card-title">{{ item.name }}</h5> -->
+          <!-- <p class="card-text">{{ item.description }}</p> -->
+          <!-- <p class="card-text">Price: ${{ item.price }}</p> -->
+          <!-- <p class="card-text" [ngClass]="{'text-success': item.availability, 'text-danger': !item.availability}">
+            {{ item.availability ? 'Available' : 'Not Available' }}
+          </p> -->
+        <!-- </div>
+      </div>
+    </div>
+  </div> -->
+
+
+  <!-- items.component.html -->
+<!-- <div *ngFor="let item of items">
+    <h2>{{ item.name }}</h2>
+    <p>Price: ${{ item.price }}</p>
+    <p *ngIf="item.availability">Available</p>
+    <p *ngIf="!item.availability">Not Available</p>
+  </div>
+   -->
+
+
+   <!-- items.component.html -->
+<!-- food-items.component.html -->
+<div class="food-items">
+    <div *ngFor="let foodItem of foodItems" class="food-item">
+      <!-- <img [src]="foodItem.imageUrl" alt="{{ foodItem.name }}"> -->
+      <h3>{{ foodItem.name }}</h3>
+      <p>Price: ${{ foodItem.price }}</p>
+      <!-- <p *ngIf="foodItem.available; else notAvailable">Available</p> -->
+      <ng-template #notAvailable>
+        <p>Not Available</p>
+      </ng-template>
+    </div>
+  </div>
+  
+  
+  
+
+ 
